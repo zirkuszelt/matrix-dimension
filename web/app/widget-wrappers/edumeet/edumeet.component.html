@@ -1,1 +1,8 @@
-<iframe [src]="iframeUrl" *ngIf="iframeUrl" frameborder="0" allowfullscreen></iframe>
+<iframe 
+    [src]="iframeUrl"
+    *ngIf="iframeUrl"
+    frameborder="0"
+    allowfullscreen
+    allow="microphone; camera; encrypted-media; autoplay; display-capture;"
+    sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-presentation"
+></iframe>
