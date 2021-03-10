@@ -6,6 +6,7 @@ export const WIDGET_ETHERPAD = ["m.etherpad", "etherpad", "dimension-etherpad"];
 export const WIDGET_GOOGLE_DOCS = ["m.googledoc", "googledocs", "dimension-googledocs"];
 export const WIDGET_GOOGLE_CALENDAR = ["m.googlecalendar", "googlecalendar", "dimension-googlecalendar"];
 export const WIDGET_JITSI = ["jitsi", "m.jitsi", "dimension-jitsi"]; // TODO: Move m.jitsi higher (https://github.com/vector-im/riot-meta/issues/282)
+export const WIDGET_EDUMEET = ["edumeet", "dimension-edumeet"]; 
 export const WIDGET_YOUTUBE = ["m.video", "youtube", "dimension-youtube"];
 export const WIDGET_GRAFANA = ["m.grafana", "grafana", "dimension-grafana"];
 export const WIDGET_TWITCH = ["twitch", "dimension-twitch"]; // TODO: m.* namespace proposal

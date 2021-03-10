@@ -7,6 +7,7 @@ import {
     WIDGET_GOOGLE_DOCS,
     WIDGET_GRAFANA,
     WIDGET_JITSI,
+    WIDGET_EDUMEET,
     WIDGET_SPOTIFY,
     WIDGET_STICKER_PICKER,
     WIDGET_TRADINGVIEW,
@@ -50,6 +51,9 @@ export class IntegrationsRegistry {
             },
             "jitsi": {
                 types: WIDGET_JITSI,
+            },
+            "edumeet": {
+                types: WIDGET_EDUMEET,
             },
             "googledocs": {
                 types: WIDGET_GOOGLE_DOCS,

@@ -6,6 +6,7 @@ import { BigBlueButtonWidgetWrapperComponent } from "./widget-wrappers/bigbluebu
 import { BigBlueButtonConfigComponent } from "./configs/widget/bigbluebutton/bigbluebutton.widget.component";
 import { VideoWidgetWrapperComponent } from "./widget-wrappers/video/video.component";
 import { JitsiWidgetWrapperComponent } from "./widget-wrappers/jitsi/jitsi.component";
+import { EdumeetWidgetWrapperComponent } from "./widget-wrappers/edumeet/edumeet.component";
 import { GCalWidgetWrapperComponent } from "./widget-wrappers/gcal/gcal.component";
 import { RiotHomeComponent } from "./riot/riot-home/home.component";
 import { CustomWidgetConfigComponent } from "./configs/widget/custom/custom.widget.component";
@@ -13,6 +14,7 @@ import { EtherpadWidgetConfigComponent } from "./configs/widget/etherpad/etherpa
 import { GoogleCalendarWidgetConfigComponent } from "./configs/widget/google-calendar/gcal.widget.component";
 import { GoogleDocsWidgetConfigComponent } from "./configs/widget/google-docs/gdoc.widget.component";
 import { JitsiWidgetConfigComponent } from "./configs/widget/jitsi/jitsi.widget.component";
+import { EdumeetWidgetConfigComponent } from "./configs/widget/edumeet/edumeet.widget.component";
 import { TwitchWidgetConfigComponent } from "./configs/widget/twitch/twitch.widget.component";
 import { YoutubeWidgetConfigComponent } from "./configs/widget/youtube/youtube.widget.component";
 import { AdminComponent } from "./admin/admin.component";
@@ -202,6 +204,11 @@ const routes: Routes = [
                         data: {breadcrumb: "Jitsi Widgets", name: "Jitsi Widgets"},
                     },
                     {
+                        path: "edumeet",
+                        component: EdumeetWidgetConfigComponent,
+                        data: {breadcrumb: "Edumeet Widgets", name: "Edumeet Widgets"},
+                    },
+                    {
                         path: "twitch",
                         component: TwitchWidgetConfigComponent,
                         data: {breadcrumb: "Twitch Livestream Widgets", name: "Twitch Livestream Widgets"},
@@ -287,6 +294,7 @@ const routes: Routes = [
             {path: "generic", component: GenericWidgetWrapperComponent},
             {path: "video", component: VideoWidgetWrapperComponent},
             {path: "jitsi", component: JitsiWidgetWrapperComponent},
+            {path: "edumeet", component: EdumeetWidgetWrapperComponent},
             {path: "bigbluebutton", component: BigBlueButtonWidgetWrapperComponent},
             {path: "gcal", component: GCalWidgetWrapperComponent},
             {path: "stickerpicker", component: StickerPickerWidgetWrapperComponent},

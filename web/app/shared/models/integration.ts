@@ -92,6 +92,11 @@ export interface FE_JitsiWidget extends FE_Widget {
         useDomainAsDefault: boolean;
     };
 }
+export interface FE_EdumeetWidget extends FE_Widget {
+    options: {
+        conferenceUrl: string;
+    };
+}
 
 export interface FE_BigBlueButtonWidget extends FE_Widget {
     options: {

@@ -1,0 +1,11 @@
+<my-widget-config [widgetComponent]="this">
+    <ng-template #widgetParamsTemplate let-widget="widget">
+        <label class="label-block">
+            {{'Conference URL' | translate}}
+            <input type="text" class="form-control"
+                   placeholder="https://letsmeet.no/MyCoolConference"
+                   [(ngModel)]="widget.dimension.newData.conferenceUrl" name="widget-url-{{widget.id}}"
+                   [disabled]="isUpdating"/>
+        </label>
+    </ng-template>
+</my-widget-config>

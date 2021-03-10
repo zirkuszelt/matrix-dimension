@@ -21,6 +21,8 @@ import { ToggleFullscreenDirective } from "./shared/directives/toggle-fullscreen
 import { FullscreenButtonComponent } from "./elements/fullscreen-button/fullscreen-button.component";
 import { VideoWidgetWrapperComponent } from "./widget-wrappers/video/video.component";
 import { JitsiWidgetWrapperComponent } from "./widget-wrappers/jitsi/jitsi.component";
+import { EdumeetWidgetWrapperComponent } from "./widget-wrappers/edumeet/edumeet.component";
+
 import { GCalWidgetWrapperComponent } from "./widget-wrappers/gcal/gcal.component";
 import { PageHeaderComponent } from "./page-header/page-header.component";
 import { SpinnerComponent } from "./elements/spinner/spinner.component";
@@ -37,6 +39,7 @@ import { NameService } from "./shared/services/name.service";
 import { GoogleCalendarWidgetConfigComponent } from "./configs/widget/google-calendar/gcal.widget.component";
 import { GoogleDocsWidgetConfigComponent } from "./configs/widget/google-docs/gdoc.widget.component";
 import { JitsiWidgetConfigComponent } from "./configs/widget/jitsi/jitsi.widget.component";
+import { EdumeetWidgetConfigComponent } from "./configs/widget/edumeet/edumeet.widget.component";
 import { TwitchWidgetConfigComponent } from "./configs/widget/twitch/twitch.widget.component";
 import { YoutubeWidgetConfigComponent } from "./configs/widget/youtube/youtube.widget.component";
 import { AdminComponent } from "./admin/admin.component";
@@ -161,6 +164,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         FullscreenButtonComponent,
         VideoWidgetWrapperComponent,
         JitsiWidgetWrapperComponent,
+        EdumeetWidgetWrapperComponent,
         BigBlueButtonWidgetWrapperComponent,
         GCalWidgetWrapperComponent,
         BigBlueButtonConfigComponent,
@@ -172,6 +176,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         GoogleCalendarWidgetConfigComponent,
         GoogleDocsWidgetConfigComponent,
         JitsiWidgetConfigComponent,
+        EdumeetWidgetConfigComponent,
         TwitchWidgetConfigComponent,
         YoutubeWidgetConfigComponent,
         AdminComponent,
