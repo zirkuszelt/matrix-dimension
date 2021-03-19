@@ -1,8 +1,19 @@
 <iframe 
     [src]="iframeUrl"
-    *ngIf="iframeUrl"
+    *ngIf="isJoined"
     frameborder="0"
     allowfullscreen
     allow="microphone; camera; encrypted-media; autoplay; display-capture;"
     sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-presentation"
 ></iframe>
+
+<div *ngIf="!isJoined" class="join-conference-wrapper">
+    <div class="join-conference-boat">
+        <div class="join-conference-prompt">
+            <h3>Edumeet Video Conference</h3>
+            <button type="button" (click)="joinConference()" class="btn btn-primary btn-large">
+                {{'Join Conference' | translate}}
+            </button><br>
+        </div>
+    </div>
+</div>

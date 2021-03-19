@@ -1,5 +1,8 @@
 // component styles are encapsulated and only applied to their components
-iframe {
+@import "../../../style/themes/themes";
+
+@include themifyComponent() {
+  iframe {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -8,3 +11,24 @@ iframe {
     width: 100%;
     height: 100%;
   }
+
+  .join-conference-wrapper {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: themed(widgetWelcomeBgColor);
+  }
+
+  .join-conference-boat {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .join-conference-prompt {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+  }
+}

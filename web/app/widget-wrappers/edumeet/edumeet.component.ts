@@ -4,7 +4,7 @@ import { WidgetApiService } from "../../shared/services/integrations/widget-api.
 import { CapableWidget } from "../capable-widget";
 import { ScalarWidgetApi } from "../../shared/services/scalar/scalar-widget.api";
 import { DomSanitizer, SafeUrl } from "@angular/platform-browser";
-
+import * as $ from "jquery";
 
 @Component({
     selector: "my-edumeet-widget-wrapper",
@@ -15,6 +15,7 @@ export class EdumeetWidgetWrapperComponent extends CapableWidget implements OnIn
 
 
     public iframeUrl: SafeUrl = null;
+    public isJoined: boolean = false
 
     private domain: string;
     private conferenceId: string;
@@ -41,8 +42,6 @@ export class EdumeetWidgetWrapperComponent extends CapableWidget implements OnIn
 
         // Set the widget ID if we have it
         ScalarWidgetApi.widgetId = params.widgetId;
-
-        ScalarWidgetApi.sendSetAlwaysOnScreen(true);
     }
 
     public ngOnInit() {
@@ -60,6 +59,14 @@ export class EdumeetWidgetWrapperComponent extends CapableWidget implements OnIn
 
         const url = `https://${this.domain}/${this.conferenceId}?${queryString}`
         this.iframeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    }
+
+    public joinConference() {
+        $(".join-conference-wrapper").hide();
+
+        ScalarWidgetApi.sendSetAlwaysOnScreen(true);
+
+        this.isJoined = true;
     }
 }
 
