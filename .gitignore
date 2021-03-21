@@ -16,6 +16,7 @@ src/**/*.js
 src/**/*.js.map
 web/**/*.js
 web/**/*.js.map
+!web/public/edumeet/*.js
 
 # Logs
 logs

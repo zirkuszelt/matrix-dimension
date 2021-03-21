@@ -95,6 +95,6 @@ export class EdumeetWidgetConfigComponent extends WidgetComponent {
         });
         widgetQueryString = this.decodeParams(widgetQueryString, Object.keys(widget.dimension.newData).map(k => "$" + k));
 
-        widget.dimension.newUrl = window.location.origin + "/widgets/edumeet" + widgetQueryString;
+        widget.dimension.newUrl = window.location.origin + "/edumeet/" + widgetQueryString;
     }
 }
