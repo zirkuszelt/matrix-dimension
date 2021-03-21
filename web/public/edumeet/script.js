@@ -35,7 +35,7 @@
         iframe.allow = 'microphone; camera; encrypted-media; autoplay; display-capture;'
         iframe.sandbox = 'allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-presentation'
         document.body.append(iframe)
-        widgetApi.setAlwaysOnScreen(true)
+        api.setAlwaysOnScreen(true)
         .then(function(r) {
             console.log("[Widget] Client responded with: ", r);
         }).catch(function(e) {
