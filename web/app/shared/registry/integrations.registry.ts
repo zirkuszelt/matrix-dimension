@@ -13,7 +13,8 @@ import {
     WIDGET_TRADINGVIEW,
     WIDGET_TWITCH,
     WIDGET_YOUTUBE,
-    WIDGET_WHITEBOARD
+    WIDGET_WHITEBOARD,
+    WIDGET_PRESENTATION
 } from "../models/widget";
 import { FE_Integration } from "../models/integration";
 
@@ -54,6 +55,9 @@ export class IntegrationsRegistry {
             },
             "edumeet": {
                 types: WIDGET_EDUMEET,
+            },
+            "presentation": {
+                types: WIDGET_PRESENTATION,
             },
             "googledocs": {
                 types: WIDGET_GOOGLE_DOCS,

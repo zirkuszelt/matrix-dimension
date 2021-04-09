@@ -14,6 +14,7 @@ import { EtherpadWidgetConfigComponent } from "./configs/widget/etherpad/etherpa
 import { GoogleCalendarWidgetConfigComponent } from "./configs/widget/google-calendar/gcal.widget.component";
 import { GoogleDocsWidgetConfigComponent } from "./configs/widget/google-docs/gdoc.widget.component";
 import { JitsiWidgetConfigComponent } from "./configs/widget/jitsi/jitsi.widget.component";
+import { PresentationWidgetConfigComponent } from "./configs/widget/presentation/presentation.widget.component";
 import { EdumeetWidgetConfigComponent } from "./configs/widget/edumeet/edumeet.widget.component";
 import { TwitchWidgetConfigComponent } from "./configs/widget/twitch/twitch.widget.component";
 import { YoutubeWidgetConfigComponent } from "./configs/widget/youtube/youtube.widget.component";
@@ -202,6 +203,11 @@ const routes: Routes = [
                         path: "jitsi",
                         component: JitsiWidgetConfigComponent,
                         data: {breadcrumb: "Jitsi Widgets", name: "Jitsi Widgets"},
+                    },
+                    {
+                        path: "presentation",
+                        component: PresentationWidgetConfigComponent,
+                        data: {breadcrumb: "Presentation Widgets", name: "Presentation Widgets"},
                     },
                     {
                         path: "edumeet",

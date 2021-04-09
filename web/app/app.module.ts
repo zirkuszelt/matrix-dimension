@@ -39,6 +39,7 @@ import { NameService } from "./shared/services/name.service";
 import { GoogleCalendarWidgetConfigComponent } from "./configs/widget/google-calendar/gcal.widget.component";
 import { GoogleDocsWidgetConfigComponent } from "./configs/widget/google-docs/gdoc.widget.component";
 import { JitsiWidgetConfigComponent } from "./configs/widget/jitsi/jitsi.widget.component";
+import { PresentationWidgetConfigComponent } from "./configs/widget/presentation/presentation.widget.component";
 import { EdumeetWidgetConfigComponent } from "./configs/widget/edumeet/edumeet.widget.component";
 import { TwitchWidgetConfigComponent } from "./configs/widget/twitch/twitch.widget.component";
 import { YoutubeWidgetConfigComponent } from "./configs/widget/youtube/youtube.widget.component";
@@ -176,6 +177,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         GoogleCalendarWidgetConfigComponent,
         GoogleDocsWidgetConfigComponent,
         JitsiWidgetConfigComponent,
+        PresentationWidgetConfigComponent,
         EdumeetWidgetConfigComponent,
         TwitchWidgetConfigComponent,
         YoutubeWidgetConfigComponent,
