@@ -57,6 +57,6 @@
     setInterval(() => {
         if(!window.widgetObj.inControl) return
         // periodically send the current state
-        // sendPage()
+        sendPage()
     }, 3000)
 })()

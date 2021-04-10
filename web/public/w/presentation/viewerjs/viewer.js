@@ -281,9 +281,10 @@ function Viewer( viewerPlugin, parameters ) {
         }
 
         viewerPlugin.showPage(n);
-
-        currentPage                                 = n;
-        document.getElementById('pageNumber').value = currentPage;
+        if(currentPage != n) {
+            currentPage                                 = n;
+            document.getElementById('pageNumber').value = currentPage;    
+        }
     };
 
 
@@ -545,8 +546,14 @@ function Viewer( viewerPlugin, parameters ) {
             setButtonClickHandler('previousPage', self.showPreviousPage);
             setButtonClickHandler('nextPage', self.showNextPage);
 
+            let debounceTimeout = null
             document.getElementById('pageNumber').addEventListener('change', function () {
-                self.showPage(this.value);
+                clearTimeout(debounceTimeout)
+                let value = this.value
+                debounceTimeout = setTimeout(() => {
+                    console.log('debounced', value)
+                    self.showPage(value);
+                }, 1000)
             });
 
             document.getElementById('scaleSelect').addEventListener('change', function () {
