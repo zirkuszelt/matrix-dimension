@@ -10,7 +10,7 @@
     window.widgetObj = {
         inControl: false,
         inControlId: 'nobody',
-        curPage: 4,
+        curPage: 1,
         showPage(n) {
             if(!window.widgetObj.inControl) return
             window.widgetObj.curPage = n
